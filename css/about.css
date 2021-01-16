@@ -1,0 +1,317 @@
+@import '../fonts/stylesheet';
+
+/*
+   font-family: 'NunitoSans-Bold';
+   font-family: 'NunitoSans-Regular';
+   font-family: 'Montserrat-Medium';
+   font-family: 'Montserrat-Thin';
+   font-family: 'Roboto-Medium';
+   font-family: 'WorkSans-Regular' 
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ============================== header ======================================= */
+
+.header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+}
+
+.nav__list_link {
+    font-family: 'Montserrat-Medium';
+    font-size: 12px;
+    color: #191919;
+    margin-left: 27px;
+}
+
+.nav__list_link:hover {
+    color: #007d2f;
+}
+
+/* ============================== /header ======================================= */
+
+/* ============================== main ============================ */
+/* <section class="about"> */
+.about {
+    background: #323232;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about__content_link {
+    font-family: 'Montserrat-Medium';
+    color: #fff;
+    font-size: 53px;
+}
+
+.about__content_description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'NunitoSans-Regular';
+    text-align: center;
+}
+/* </section class="about"> */
+
+/* <div class="info"> */
+
+.info {
+    background: #007d2f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 240px;
+}
+
+.info__card {
+    margin-right: 150px;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__card_amount {
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.info__card_description {
+    font-family: 'Montserrat-Medium';
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+/* </div class="info"> */
+
+/* <section class="biography"> */
+
+.biography {
+   overflow: hidden;
+   background: #f5f5f5;
+}
+
+.biography__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.biography .biography__box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: #f5f5f5;
+   padding: 0;
+   transform: translateX(125px);
+}
+
+.main__div { 
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.main__div_title {
+    font-size: 30px;
+    color: #171717;
+    font-family: 'Montserrat-Medium';
+}
+
+.main__div_text {
+    font-size: 16px;
+    color: #787878;
+    font-family: 'NunitoSans-Regular';
+    width: 445px;
+}
+
+.main__div_text2 {
+    font-size: 16px;
+    color: #787878;
+    font-family: 'NunitoSans-Regular';
+    width: 445px;
+
+}
+
+.biography .biography__img {
+    /* width: 50vw; */
+    height: 570px;
+    object-fit: cover;
+    padding: 0;
+    transform: scaleX(1.5) translateX(-157px);
+}
+
+.biography .biography__div {
+    padding: 0;
+}
+
+.signature {
+    width: max-content;
+}
+
+/* </section class="biography"> */
+
+/* <section class="project"> */
+.project {
+    height: 400px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__title {
+    padding-top: 20px;
+    color: #1d1d1d ;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat-Medium';
+}
+
+.project__text {
+    color: #787878;
+    font-size: 16px ;
+    font-family: 'NunitoSans-Regular';
+    margin-top: 35px;
+    margin-bottom: 38px;
+}
+
+.project__link {
+    color: #fff;
+    padding: 23px 13px;
+    background: #007d2f;
+    font-size: 12px ;
+    font-family: 'Montserrat-Medium';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.project__link:hover {
+  color: #fff;
+}
+/* </section class="project"> */
+/* ============================== /main ============================ */
+
+/*================== <footer class="footer">=================== */
+.footer {
+    height: 285px;
+    background: #141414;
+}
+
+.footer__content {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */    
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo_title{
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.footer__logo_text {
+    font-family: 'Montserrat-Medium';
+    color: #787878;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts_email {
+    color: #bcbcbc;
+    font-size:15px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.footer__contacts_email:hover {
+    color: #fff
+}
+
+.footer__telephone {
+    color: #bcbcbc;
+    font-size: 15px;
+    font-family: 'WorkSans-Regular' 
+}
+
+.footer__telephone:hover {
+    color: #fff;
+}
+
+.footer__media {
+    display: flex;
+    flex-direction: row;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div__link {
+    color: #bcbcbc;
+    font-size:15px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.div__link:hover {
+    color: #fff;
+}
+
+
+/* =================</footer class="footer"> =====================*/

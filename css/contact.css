@@ -1,0 +1,291 @@
+@import '../fonts/stylesheet';
+
+/*
+   font-family: 'NunitoSans-Bold';
+   font-family: 'NunitoSans-Regular';
+   font-family: 'Montserrat-Medium';
+   font-family: 'Montserrat-Thin';
+   font-family: 'Roboto-Medium';
+   font-family: 'WorkSans-Regular' 
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ============================== header ======================================= */
+
+.header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+}
+
+.nav__list_link {
+    font-family: 'Montserrat-Medium';
+    font-size: 12px;
+    color: #191919;
+    margin-left: 27px;
+}
+
+.nav__list_link:hover {
+    color: #007d2f;
+}
+
+/* ============================== /header ======================================= */
+
+
+/* ============================== main ========================== */
+/* <section class="info"> */
+.info {
+    padding-top: 100px;
+    background: #f5f5f5;
+    padding-bottom: 100px;
+}
+
+.infobox {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.infobox__title {
+    color: #171717;
+    font-family: 'Montserrat-Medium';
+    font-size: 30px ;
+    width: 200px;
+}
+
+.infobox__text {
+    color: #787878 ;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    width: 350px;
+    margin-bottom: 35px;
+}
+
+.infobox__link {
+    color: #787878;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    margin-bottom: 23px;
+}
+
+.infobox__link:hover {
+    color: #787878;
+}
+
+.infobox__link_span {
+    font-size: 16px;
+    font-family: 'NunitoSans-Bold';
+    color: #000;
+}
+
+.registration {
+    padding-top: 40px ;
+    width: 635px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    justify-content: center;
+    margin-left: -60px;
+}
+
+.smallreg {
+    /* width: 730px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.smallform {
+    font-family: 'NunitoSans-Regular';
+    font-size: 15px;
+    color: #787878;
+    margin-bottom: 30px;
+    height: 48px;
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
+.title {
+    font-family: 'NunitoSans-Regular';
+    font-size: 15px;
+    color: #787878;
+    margin-bottom: 30px;
+    height: 48px;
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
+.comment {
+    height: 170px;
+    font-family: 'NunitoSans-Regular';
+    font-size: 15px;
+    color: #787878;
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
+.registr__link {
+    color: #fff;
+    background: #007d2f;
+    padding: 22px 35px;
+    font-size: 12px;
+    font-family: 'Montserrat-Medium';
+    text-align: center;
+    border: #fff;
+}
+
+.divreg {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    width: 760px;
+} 
+
+.registr__link:hover {
+    color: #fff;
+}
+
+/* </form action="" class="registration"> */
+/* map */
+.map {
+    position: relative;
+    overflow: hidden;
+}
+
+.map__button {
+    position: absolute;
+    bottom: -100%;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.map:hover .map__button {
+    bottom: 50%;
+    left: 51%;
+}
+
+.map__img {
+    height: 470px;
+    object-fit: cover;
+}
+
+/* /map */
+/* </section class="info"> */
+/* ============================== /main ========================== */
+
+
+/*================== <footer class="footer">=================== */
+.footer {
+    height: 285px;
+    background: #141414;
+}
+
+.footer__content {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */    
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo_title{
+    font-family: 'Montserrat-Medium';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.footer__logo_text {
+    font-family: 'Montserrat-Medium';
+    color: #787878;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts_email {
+    color: #bcbcbc;
+    font-size:15px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.footer__contacts_email:hover {
+    color: #fff
+}
+
+.footer__telephone {
+    color: #bcbcbc;
+    font-size: 15px;
+    font-family: 'WorkSans-Regular' 
+}
+
+.footer__telephone:hover {
+    color: #fff;
+}
+
+.footer__media {
+    display: flex;
+    flex-direction: row;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div__link {
+    color: #bcbcbc;
+    font-size:15px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.div__link:hover {
+    color: #fff;
+}
+
+
+/* =================</footer class="footer"> =====================*/
